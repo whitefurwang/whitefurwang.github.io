@@ -21,6 +21,7 @@ body {
 	background: #fff;
 	font-family: Lato, sans-serif;
 	margin: 0 0 80px;
+	word-break: break-word;
 }
 a {
 	color: #2ecc71;
@@ -51,13 +52,18 @@ li {
 	list-style: none;
 }
 li:before {
-	content: "\f052";
 	float: left;
 	font: 13px Octicons;
 	margin-top: 6px;
 	margin-left: -20px;
 	opacity: .1;
 	position: absolute;
+}
+li.bullet:before {
+	content: "\f052";
+}
+li.square:before {
+	content: "\f053";
 }
 blockquote {
 	border-left: 5px solid #e7e9ec;
@@ -82,7 +88,7 @@ h4 span:first-child {
 .col-sm-6 {
 	margin-bottom: 10px;
 }
-.col-sm-12 h4 {
+.col-sm-12 h4:not(:first-child) {
 	margin-top: 12px; 
 }
 .col-sm-12 + .col-sm-12 {
@@ -289,8 +295,12 @@ h4 span:first-child {
 					<li class="bullet">導入 PUG &amp; SASS (Gulp)</li>
 					<li class="bullet">導入 Github Flow 協同開發模式</li>
 					<li class="bullet">導入 git submodule 輔助跨專案共用模組開發模式</li>
+					<li class="bullet">既有程式結構調整 (Gulp Browserify/ES6)</li>
 					<li class="bullet">設計師常態營運畫面排版工具優化 (jQuery)</li>
-					<li class="bullet">既有程式拆分模組化 (Gulp Browserify/ES6)</li>
+					<li class="bullet">前端渲染模板工具整合 (React)</li>
+					<li class="bullet">
+						共用功能模組開發 [<a href="./moduleList.html">模組列表</a>] (JavaScript/jQuery/React)
+					</li>
 					<li class="bullet">撰寫程式操作文件 (Markdown)</li>
 					<li class="bullet">撰寫 API 文件</li>
 					<li class="bullet">旗下品牌活動官網:</li>

@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Module List - Pazzo</title>
+
+	<meta property="og:title" content="Module List - Pazzo">
+	<meta property="og:description" content="前端模組列表 (美而快)">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+	word-break: break-word;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+li.bullet:before {
+	content: "\f052";
+}
+li.square:before {
+	content: "\f053";
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.clearfix {
+	clear: both;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4:not(:first-child) {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#work .website,
+#volunteer .position,
+#volunteer .website {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	} 
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="./index.html">< Back</a>
+				</div>
+				<div class="col-sm-9">
+					<h1>Module List</h1>
+					<h2>Pazzo</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="structor" class="row">
+		<aside class="col-sm-3">
+			<h3>Structor</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4>helpers/</h4>
+				<ul class="highlights">
+					<li class="bullet">非 UI 用的共用資源，例如協助環境判斷的函式，或是 sass reset。</li>
+				</ul>
+				<h4>components/</h4>
+				<ul class="highlights">
+					<li class="bullet">共用的 UI 模組及 UI 相關函式，模組部分包含 js, pug &amp; React，如果有適合共用的 sass 也可以放這裡。</li>
+				</ul>
+				<h4>vendors/</h4>
+				<ul class="highlights">
+					<li class="bullet">從外部下載後直接被引用的資源。</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="react" class="row">
+		<aside class="col-sm-3">
+			<h3>React Modules</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4>components/</h4>
+				<ul class="highlights">
+					<li class="bullet">
+						<h5>global</h5>
+						<ul>
+							<li class="square">Pagination (分頁選擇器)</li>
+							<li class="square">ImagePlaceholder (圖片 404)</li>
+							<li class="square">Select (下拉選單)</li>
+							<li class="square">Lightbox (顯示 React 模組的光箱)</li>
+						</ul>
+					</li>
+					<li class="cart">
+						<h5>cart</h5>
+						<ul>
+							<li class="square">ReactMiniCart (由 React 實踐的迷你購物車渲染及相關事件)</li>
+						</ul>
+					</li>
+					<li class="bullet">
+						<h5>product</h5>
+						<ul>
+							<li class="square">Breadcrumb (麵包屑)</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="javascript" class="row">
+		<aside class="col-sm-3">
+			<h3>JavaScript Modules</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4>helpers/</h4>
+				<ul class="highlights">
+					<li class="bullet">excuteByDom (當指定 dom 存在時執行方法)</li>
+					<li class="bullet">ignoreByDom (當指定 dom 存在時不執行方法)</li>
+					<li class="bullet">versionSwitch (不同螢幕寬度時執行不同程式)</li>
+					<li class="bullet">timer (使方法在伺服器時間區間內被呼叫)</li>
+					<li class="bullet">preloadimages (預載圖片並回傳 .done() 方法)</li>
+					<li class="bullet">setDefaultVal (設定預設值)</li>
+					<li class="bullet">getURLParameter (查詢網址參數內容)</li>
+					<li class="bullet">getServerTime (取得伺服器時間)</li>
+					<li class="bullet">objectFilter (使陣列內的物件依照該物件的特性被篩選，回傳篩選後的陣列)</li>
+				</ul>
+				<h4>components/</h4>
+				<ul class="highlights">
+					<li class="bullet">
+						<h5>global</h5>
+						<ul>
+							<li class="square">image404 (圖片 404)</li>
+							<li class="square">dialogPopup (ajax 動態載入彈跳光箱)</li>
+							<li class="square">htmlNoTouch (html 加上 .no-touch)</li>
+							<li class="square">noContextMenu (點擊右鍵無效)</li>
+							<li class="square">triggerSelect (綁定 select mousedown 事件)</li>
+							<li class="square">focusInput (有資料的 input 維持 focus 狀態)</li>
+							<li class="square">uiSelect (自訂樣式下拉選單)</li>
+							<li class="square">uiQuantity (數量選擇器)</li>
+							<li class="square">uiTabs (點擊標籤切換顯示區塊)</li>
+							<li class="square">gotop (回到頂端按鈕)</li>
+							<li class="square">accordion (手風琴)</li>
+							<li class="square">hashAccordion (url hash 與手風琴)</li>
+							<li class="square">slideNotice (於指定物件添加/刪除提示文字 HTML 標籤)</li>
+							<li class="square">floatLabel (表單輸入框浮動提示標籤)</li>
+							<li class="square">rigMargin (使用 margin-top 定位 DOM)</li>
+							<li class="square">clickByEnter (按 Enter 時點擊按鈕)</li>
+							<li class="square">formInputOrder (表單中點擊 Tab 及 Enter 事件)</li>
+						</ul>
+					</li>
+					<li class="bullet">
+						<h5>template</h5>
+						<ul>
+							<li class="square">bodyDarken (捲動切換背景色)</li>
+						</ul>
+					</li>
+					<li class="bullet">
+						<h5>productList</h5>
+						<ul>
+							<li class="square">itemFilter (列表篩選工具)</li>
+						</ul>
+					</li>
+					<li class="bullet">
+						<h5>product</h5>
+						<ul>
+							<li class="square">zoombox (圖片列表放大)</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	</div>
+	
+	</body>
+</html>
